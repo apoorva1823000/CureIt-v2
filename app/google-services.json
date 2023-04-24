@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "183700198577",
+    "project_id": "cureit---health-assistant",
+    "storage_bucket": "cureit---health-assistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183700198577:android:556cea1f0836fdaea47e90",
+        "android_client_info": {
+          "package_name": "com.example.cureit_healthassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183700198577-1ru4e4jo8mjf3cv4a41uspfvjlj967b3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwwtFxlFa_ehkvpdnH631vpvTLa44mEEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183700198577-1ru4e4jo8mjf3cv4a41uspfvjlj967b3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

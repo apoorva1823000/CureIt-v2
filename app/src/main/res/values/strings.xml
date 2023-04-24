@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">CureIt - Health Assistant</string>
+    <string name="front_image">Front Image</string>
+    <string name="back_image">Back Image</string>
+    <string name="by_loopbreakers">-by LoopBreakers</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="emergency_call">Emergency Call</string>
+    <string name="app_tutorial">App Tutorial</string>
+    <string name="report_a_problem">Report a problem</string>
+    <string name="logout">LogOut</string>
+    <string name="login">SignUp</string>
+    <string name="toolbar_logo">Toolbar Logo</string>
+    <string name="cureit">CureIt</string>
+    <string name="skip">Skip</string>
+    <string name="onboardTitleOne">CureIt</string>
+    <string name="onboardDescriptionOne">Your healthcare assistant\nMade in India with ❤️</string>
+    <string name="onboardTitleTwo">By the professionals, For the people</string>
+    <string name="onboardDescriptionTwo">CureIt is for everyone and is made with precision for the humanity</string>
+    <string name="onboardTitleThree">Get Cure-ed</string>
+    <string name="onboardDescriptionThree">CureIt has a vast data of homemade solutions as well as opinions by medicinal professionals for your health and disease-free life</string>
+    <string name="onboardTitleFour">Get assisted</string>
+    <string name="onboardDescriptionFour">Book a virtual appointment or hospital visit and get assisted at the prices lesser than ever expected. Cause we believe in Building A Healthier Nation </string>
+    <string name="confirm">Confirm ?</string>
+    <string name="do_you_wish_to_leave_the_app">Do you wish to leave the app ?</string>
+    <string name="register">Register</string>
+    <string name="save">Save</string>
+    <string name="loginn">LogIn</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_age">Enter your birth year</string>
+    <string name="enter_your_email">Enter your email ID</string>
+    <string name="enter_your_password">Enter Password</string>
+    <string name="confirm_your_password">Confirm Password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender:</string>
+    <string name="login_prompt">Already a user ?</string>
+    <string name="registration_prompt">New user ?</string>
+    <string name="reset">Reset Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="open_navigation">Open Navigation</string>
+    <string name="close_navigation">Close Navigation</string>
+    <string name="how_can_we_help">How can we help ?</string>
+    <string name="chat_with_an_expert">Chat with an expert</string>
+    <string name="book_a_video_call">Arrange a video call</string>
+    <string name="talk_to_a_chatbot">Chat with expert AI</string>
+    <string name="home">Home</string>
+    <string name="track_your_parcel">Track your parcel</string>
+    <string name="settings">Settings</string>
+    <string name="share">Share</string>
+    <string name="about_us">About Us</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_support">User Support</string>
+    <string name="v1_0_0">v1.0.0</string>
+    <string name="aboutCureItTitle">CureIt</string>
+    <string name="aboutCureItDescription">
+        CureIt is a healthcare application developed by LoopBreakers, a company specializing in creating innovative and user-friendly software solutions. With a team of experienced developers, designers, and healthcare professionals, the company has created a comprehensive platform that provides users with easy access to ayurvedic solutions for common diseases and appointment booking services.
+        CureIt is designed to provide users with natural and holistic treatments for a wide range of ailments, with a focus on traditional Indian medicine. The application allows users to book appointments with specialized ayurvedic practitioners and doctors, providing them with timely access to medical care without having to wait in long queues or travel long distances.
+        In addition to appointment booking, CureIt provides a wealth of information on common diseases and their ayurvedic remedies. Users can search for a particular ailment and receive detailed information on the disease, including its symptoms, causes, and possible treatments. The application also provides personalized recommendations for ayurvedic treatments based on the user\'s specific health conditions.
+        Overall, CureIt is an excellent tool for anyone seeking natural and holistic healthcare solutions. Developed by LoopBreakers, the application combines the expertise of healthcare professionals and experienced developers to provide users with a comprehensive and user-friendly platform for accessing ayurvedic treatments and appointment booking services.
+    </string>
+    <string name="aboutLoopBreakersTitle">LoopBreakers</string>
+    <string name="aboutLoopBreakersDescription">
+        LoopBreakers is a young and dynamic team of software developers and computer science engineering college students. The team comprises three passionate developers who are dedicated to creating innovative and user-friendly software solutions that can make a real difference in people\'s lives.
+        Despite being a small team, LoopBreakers has a wealth of expertise and experience in developing software applications. Each member of the team brings a unique set of skills and perspectives, which helps the team to tackle complex problems and develop creative solutions.
+        With a strong focus on innovation and user experience, LoopBreakers is committed to creating high-quality software applications that can provide value to its users. The team is constantly exploring new technologies and approaches to ensure that their applications remain relevant and useful in today\'s fast-paced digital landscape.
+        Overall, LoopBreakers is a talented and dedicated team of developers who are passionate about creating software solutions that can make a positive impact on the world. Their commitment to innovation, user experience, and high-quality development makes them a valuable asset to the software development industry.
+        If you have any questions or would like to stay updated on our latest news and developments, we encourage you to connect with us via social media. You can follow us on Linkedin, Twitter, and Instagram to receive updates on our latest products, services, and promotions. We also encourage you to engage with us on these platforms by sharing your feedback, asking questions, or leaving comments. We value your feedback and look forward to connecting with you!
+    </string>
+    <string name="developerWebsite">Visit here</string>
+    <string name="aboutDevelopersWebsite">
+        Discover more about the developer\'s work and experience by visiting my personal portfolio website. Get an in-depth look into my skills and expertise, and explore my past projects to get a better understanding of my capabilities. Click the link below to access my portfolio website now!
+    </string>
+    <string name="medicines">Medicines</string>
+    <string name="click_me_to_open_app">Click me to open app</string>
+    <string name="name">Name</string>
+    <string name="dash">----</string>
+    <string name="email">Email ID</string>
+    <string name="age">Age</string>
+    <string name="profile">Profile</string>
+    <string name="profileDr">Family Doctor</string>
+    <string name="yop">Years of practice</string>
+    <string name="appointments">Appointments</string>
+    <string name="specialization">Specialization</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="back_to_home">Back To Home</string>
+    <string name="profileDescription">Welcome to CureIt</string>
+    <string name="DrName">Name of the Doctor</string>
+    <string name="DrEmail">Email Id of the Doctor</string>
+    <string name="DrPhoneNumber">Phone Number for Emergency Contact</string>
+    <string name="DrYOP">Years of practice in the field</string>
+    <string name="DrSpecialization">Specialization</string>
+    <string name="DrAge">Age of the doctor</string>
+    <string name="do_you_wish_to_delete_your_data">Do you wish to delete your data ? 🗑️</string>
+    <string name="saving">Saving...</string>
+    <string name="you_can_book_appointment_by_clicking_on_the_menu_button_and_selecting_the_book_appointment_option">You can book appointment by clicking on the menu button and selecting the Book Appointment option</string>
+    <string name="disease_name">Disease Name</string>
+    <string name="doctor">Doctor</string>
+    <string name="content">Hello World</string>
+    <string name="whom_to_approach">Whom to approach ?</string>
+    <string name="when_should_you_see_the_doctor">When should you see the doctor ?</string>
+    <string name="what_are_the_cures">What are the cures ?</string>
+    <string name="what_is_it">What is it ?</string>
+</resources>

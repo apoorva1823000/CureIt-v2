@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.CuresActivity"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bottom_nav_background"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.Design">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:background="@color/background"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/collapseimage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="right"
+                app:lottie_rawRes="@raw/cures"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:layout_collapseMode="parallax"/>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/collapsedtoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/collapsebg"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/what_is_it"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/data1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/data1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:text="@string/content"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/heading2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/heading1"/>
+
+            <TextView
+                android:id="@+id/heading2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/whom_to_approach"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/data2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/data1" />
+
+            <TextView
+                android:id="@+id/data2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="cursive"
+                android:text="@string/content"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/heading3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/heading1"/>
+
+            <TextView
+                android:id="@+id/heading3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="@string/when_should_you_see_the_doctor"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/data3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/data2"/>
+
+            <TextView
+                android:id="@+id/data3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="cursive"
+                android:text="@string/content"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/heading4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/heading3"/>
+
+            <TextView
+                android:id="@+id/heading4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="@string/what_are_the_cures"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/data4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/data3"/>
+
+            <TextView
+                android:id="@+id/data4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="cursive"
+                android:text="@string/content"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/heading4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/contactDr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAlignBottom="false"
+        android:clickable="true"
+        android:src="@drawable/baseline_call_24"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="end|bottom"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#00FFD9"
+        android:contentDescription="@string/appointments"
+        android:focusable="true" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

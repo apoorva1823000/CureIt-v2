@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.AddDoctor"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/upper_leaf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/app_tutorial"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/AddDoctorDetailsLottie"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:lottie_rawRes="@raw/doctor"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/registerDrTitle"
+                    android:contentDescription="@string/app_tutorial"
+                    android:elevation="150dp"/>
+
+                <TextView
+                    android:id="@+id/registerDrTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/AddDoctorDetailsLottie"
+                    android:textColor="@color/white"
+                    android:text="@string/profileDr"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/registrationFormBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/registerDrTitle"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="150dp"
+                    app:cardBackgroundColor="#63000343">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/DrFullName"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/DrEmailID"
+                            app:shapeAppearance="@style/Cut"
+                            android:layout_margin="10dp"
+                            app:boxStrokeColor="@color/white"
+                            app:hintTextColor="@color/white"
+                            app:placeholderTextColor="@color/white"
+                            android:textColorHint="@color/white"
+                            app:errorTextColor="#FF0202"
+                            app:boxStrokeErrorColor="#FF0202"
+                            app:endIconTint="@color/white"
+                            android:hint="@string/DrName"
+                            app:endIconMode="clear_text">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/DrFullNameET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:inputType="text"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/DrEmailID"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/DrFullName"
+                            app:layout_constraintBottom_toTopOf="@id/DrYOP"
+                            app:shapeAppearance="@style/Cut"
+                            android:layout_margin="10dp"
+                            app:boxStrokeColor="@color/white"
+                            app:hintTextColor="@color/white"
+                            app:placeholderTextColor="@color/white"
+                            android:textColorHint="@color/white"
+                            app:errorTextColor="#FF0202"
+                            app:boxStrokeErrorColor="#FF0202"
+                            app:endIconTint="@color/white"
+                            android:hint="@string/DrEmail"
+                            app:endIconMode="clear_text">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/DrEmailIDET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:inputType="text"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/DrYOP"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/DrEmailID"
+                            app:layout_constraintBottom_toTopOf="@id/DrMbl"
+                            android:hint="@string/DrYOP"
+                            android:layout_margin="10dp"
+                            app:boxStrokeColor="@color/white"
+                            app:hintTextColor="@color/white"
+                            android:textColorHint="@color/white"
+                            app:errorTextColor="#FF0202"
+                            app:boxStrokeErrorColor="#FF0202"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="2"
+                            app:counterTextColor="@color/white"
+                            app:endIconMode="clear_text"
+                            app:placeholderTextColor="@color/white"
+                            app:endIconTint="@color/white"
+                            app:shapeAppearance="@style/Cut">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/DrYOPET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/DrMbl"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/DrYOP"
+                            app:layout_constraintBottom_toTopOf="@id/DrSpecialization"
+                            android:hint="@string/DrPhoneNumber"
+                            android:layout_margin="10dp"
+                            app:boxStrokeColor="@color/white"
+                            app:hintTextColor="@color/white"
+                            android:textColorHint="@color/white"
+                            app:errorTextColor="#FF0202"
+                            app:boxStrokeErrorColor="#FF0202"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="10"
+                            app:counterTextColor="@color/white"
+                            app:endIconMode="clear_text"
+                            app:placeholderTextColor="@color/white"
+                            app:endIconTint="@color/white"
+                            app:shapeAppearance="@style/Cut">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/DrMblET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/DrSpecialization"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/DrMbl"
+                            app:layout_constraintBottom_toTopOf="@id/DrGenderRadioGroup"
+                            android:hint="@string/DrSpecialization"
+                            android:layout_margin="10dp"
+                            app:boxStrokeColor="@color/white"
+                            app:hintTextColor="@color/white"
+                            app:placeholderTextColor="@color/white"
+                            android:textColorHint="@color/white"
+                            app:errorTextColor="#FF0202"
+                            app:boxStrokeErrorColor="#FF0202"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/white"
+                            app:shapeAppearance="@style/Cut">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/DrSpecializationET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:inputType="textEmailAddress"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <RadioGroup
+                            android:id="@+id/DrGenderRadioGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/DrSpecialization"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/gender"
+                                android:textColor="@color/white"
+                                android:layout_margin="15dp"/>
+
+                            <RadioButton
+                                android:id="@+id/DrMaleRadioButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/male"
+                                android:textColor="@color/white"
+                                android:layout_margin="15dp"/>
+
+                            <RadioButton
+                                android:id="@+id/DrFemaleRadioButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/female"
+                                android:textColor="@color/white"
+                                android:layout_margin="15dp"/>
+
+
+                        </RadioGroup>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/DrregistrationButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/submit_button"
+                    android:padding="10dp"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/registrationFormBody"
+                    app:rippleColor="#00FF99" />
+
+                <ProgressBar
+                    android:id="@+id/DrloadingRegistration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:visibility="gone"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
